@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Book (Facebook Clone)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/57aa12c31b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="Img/logo.png" class="logo">
+            <ul>
+                <li><img src="Img/notification.png"></li>
+                <li><img src="Img/inbox.png"></li>
+                <li><img src="Img/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="Img/search.png">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="Img/profile-pic.png">
+            </div>
+        </div>
+
+        <div class="setting-menu">
+
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+
+
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png">
+                    <div>
+                        <p>Mahd Rajput</p>
+                        <a href="#">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="img/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="img/setting.png" class="settings-icon">
+                    <a href="#">Setting & Privacy <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="img/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="img/arrow.png" width="10px"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!-------------------- left side-bar-------------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="Img/news.png">Latest Feed</a>
+                <a href="#"><img src="Img/friends.png">Friends</a>
+                <a href="#"><img src="Img/group.png">Group</a>
+                <a href="#"><img src="Img/marketplace.png">Marketplace</a>
+                <a href="#"><img src="Img/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="Img/shortcut-1.png">Web Develpors</a>
+                <a href="#"><img src="Img/shortcut-2.png">Web Design</a>
+                <a href="#"><img src="Img/shortcut-3.png">Full Stack Development</a>
+                <a href="#"><img src="Img/shortcut-4.png">Website Expert </a>
+            </div>
+        </div>
+        <!-------------------- main content-------------- -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="img/upload.png">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="img/Babar-Azam.png">
+                    <p>Babar</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="img/Mohammad-Rizwan.png">
+                    <p>Rizwan</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="img/Shaheen-Afridi.png">
+                    <p>Shaheen</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="img/Shadab Khan.png">
+                    <p>Shadab</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png">
+                    <div>
+                        <p>Mahd Rajput</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Mahd?"></textarea>
+                    <div class="add-post-link">
+                        <a href="#"><img src="img/live-video.png">Live Video</a>
+                        <a href="#"><img src="img/photo.png">Photo/Video</a>
+                        <a href="#"><img src="img/feeling.png">Feeling Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Mahd Rajput</p>
+                            <span>Nov 11 2022, 12:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">On this Day <span>11 Nov, 2021</span> we were knockedout from Wt20 Cup 21' and This
+                    time we are at MCG for playing Wt20 Cup 22'. <a href="#"> #MensinGreen</a> <a
+                        href="#">#RepeatHistory1992</a> </p>
+                <img src="img/feed-1.jpeg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png"> 100k </div>
+                        <div><img src="img/comments.png"> 567 </div>
+                        <div><img src="img/share.png"> 100 </div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="img/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Mahd Rajput</p>
+                            <span>Nov 09 2022, 16:27 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text"><span>Pakistan</span> is now in Finals of ICC World T20 Cup 22'.Will Pakistan
+                    Repeat the 92' History? <a href="#"> #MensinGreen</a> <a href="#">#RepeatHistory1992</a> </p>
+                <img src="img/feed-2.jpeg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png"> 37k </div>
+                        <div><img src="img/comments.png"> 56 </div>
+                        <div><img src="img/share.png"> 2.7k </div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="img/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Mahd Rajput</p>
+                            <span>Nov 08 2022, 09:57 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text"><span>Babar Azam and Mohammad Rizwan</span> are the Best Ever Pakistan's Opener in
+                    T20 History. They will come back stronger. <a href="#"> #MensinGreen</a> <a
+                        href="#">#RepeatHistory1992</a> </p>
+                <img src="img/feed-3.jpeg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png"> 137k </div>
+                        <div><img src="img/comments.png"> 18.3k </div>
+                        <div><img src="img/share.png"> 57k </div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="img/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Mahd Rajput</p>
+                            <span>Nov 03 2022, 17:39 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text"><span>Pakistan</span> defeated the undefeated team of Group B of World T20 Cup
+                    22'<a href="#"> #MensinGreen</a> <a href="#">#RepeatHistory1992</a> </p>
+                <img src="img/feed-4.jpeg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png"> 18k </div>
+                        <div><img src="img/comments.png"> 289 </div>
+                        <div><img src="img/share.png"> 148 </div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="img/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+        <!-------------------- right side-bar-------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Event</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mahd's Birthday</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Lahore</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event-2">
+                    <h3>23</h3>
+                    <span>October</span>
+                </div>
+                <div class="right-event">
+                    <h4>World T20 Cup</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Australia</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/Babar-Azam.png">
+                </div>
+                <p>Babar Azam</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/Mohammad-Rizwan.png">
+                </div>
+                <p>Mohammad Rizwan</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/Shaheen-Afridi.png">
+                </div>
+                <p>Shaheen Afridi</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/Shadab Khan.png">
+                </div>
+                <p>Shadab Khan</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2022 - Mahd Rajput</p>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
